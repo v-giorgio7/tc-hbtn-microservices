@@ -1,0 +1,18 @@
+A arquitetura serverless consiste em um padrão de projeto em que a preocupação é concentrada na criação e execução das aplicações e não na configuração e gerenciamento dos servidores. Esse último fica como responsabilidade de um third-party, ou um provedor de nuvem, que irá realizar a manutenção e escalabilidade do servidor de forma automática. Um dos principais benefícios é justamente a escalabilidade: o servidor irá ser adaptado automaticamente de acordo com o aumento da demanda e, também, a cobrança se dá por meio da quantidade de requests, ou seja, se não houver requisições para um serviço, ele não será cobrado.]
+
+As soluções da arquitetura serverless se dividem em duas: back-end as a service (BaaS) e function as a service (Faas). No caso da FaaS, temos um modelo de execução orientado a eventos, em que os desenvolvedores criam e executam pequenos pacoted da aplicação, como funções, sem a preocupação com a infraestrutura do servidor. Nesse caso, as funções são iniciadas e desligadas de acordo com a demanda e possuem escalabilidade automática, gerenciada pelo provedor de nuvem.
+
+Já Cloud Computing, ou Computação em Nuvem, abrange uma maior quantidade de serviços. Resumidamente, trata-se de um conjunto de serviços disponibilizados através da nuvem (Internet) que oferecem de forma rápida, flexível e econômica servidores (com gerenciamento automático), banco de dados, software, etc. Geralmente, esses serviços são pagos de acordo com o uso.
+
+Os tipos de serviços cloud são:
+
+- IaaS (Infrastructure as a Service): trata-se de utilizar um provedor de nuvem que forneça uma infraestrutura pronta para ser utilizada, como máquinas virtuais, sistemas operacionais…
+- PaaS (Platform as a Service): nesse caso, é um tipo de serviço que disponibiliza um ambiente de desenvolvimento e testes. Assim, o desenvolvedor não precisa se preocupar com a preparação do ambiente, nem com infraestrutura, banco de dados…
+- Serverless, incluindo FaaS: como mencionado anteriormente, é mais adaptável às necessidades do desenvolvedor, que irá escrever e manusear pacotes de códigos como funções, com uma arquitetura automaticamente escalável e orientada a eventos
+- SaaS (Software as a Service): o provedor de nuvem mantém e controla uma aplicação de software, executando manutenções em casos de atualização, segurança…
+
+Então, as principais diferenças entre as três arquiteturas vistas (monolítica, microsserviços e serverless) são:
+
+- a arquitetura monolítica deve ser utilizada para aplicações pequenas, uma vez que não possui escalabilidade automática e é fortemente acoplada - um banco de dados, linguagem de programação padronizada e código compartilhado
+- a arquitetura de microsserviços deve ser utilizada para aplicações maiores, em que diversos serviços podem ser subdividos em diferentes equipes que, podem ter diferentes linguagens de programação, bancos de dados, e se comunicam através de APIs, por exemplo, ou serviços de mensageria. Nesse caso, é tarefa mais árdua criar e gerenciar a infraestrutura da aplicação.
+- a arquitetura serverless busca facilitar e reduzir o tempo e o custo do desenvolvimento, uma vez que “aluga” serviços de provedores de nuvem para disponibilizarem recursos sob demanda, que automatizam a manutenção, a segurança, a escalabilidade, etc.
